@@ -8,9 +8,9 @@ unzip main.zip
 ```
 I originally downloaded these sequences from [NCBI](https://www.ncbi.nlm.nih.gov), which is a database of biological data, including genome sequences. Each sequence in the `ecoli` and `mtb` directories is the complete chromosome from an *E. coli* and *M. tuberculosis* genome, respectively. The file names are their *accessions* e.g. `NZ_CP007391.1`, which is a unique identifier given by NCBI. If we want, we can [search for them on NCBI](https://www.ncbi.nlm.nih.gov/search/all/?term=NZ_CP007391.1). Each sequence is in the [FASTA](https://en.wikipedia.org/wiki/FASTA_format) format. What are required features of a FASTA file?
  
-## Annotating genomes with Prokka
+## Annotating sequences with Prokka
 
-Now, we want to annotate our genomes. Whenever running a new software tool, it is crucial to understand the parameters, to make sure you're running it correctly, and the version, so you can cite it properly. For Prokka, we can run
+Now, we want to annotate our chromosomes. Whenever running a new software tool, it is crucial to understand the parameters, to make sure you're running it correctly, and the version, so you can cite it properly. For Prokka, we can run
 ```
 prokka --help
 ```
@@ -43,7 +43,7 @@ python accumulation.py ./ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
 ```
 How do the two plots compare? How could we improve this script?
 
-## Clustering genomes in two ways
+## Clustering chromosomes in two ways
 - Mash similarity heatmap
 - Gene overlap heatmap
 
