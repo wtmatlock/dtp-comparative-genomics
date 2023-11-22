@@ -19,7 +19,7 @@ def new_genes_found(incidence_matrix):
     unique_genes_seen = set()
 
     # Initialize an array to store the number of new genes found at each step
-    new_genes_found = np.zeros(num_samples)
+    genes_found = np.zeros(num_samples)
 
     # Iterate through each sample row and record the number of unique genes found
     for i in range(num_samples):
@@ -32,12 +32,12 @@ def new_genes_found(incidence_matrix):
         unique_genes_seen.update(set(np.where(current_sample > 0)[0]))
         
         # Record the number of new genes found for this sample
-        new_genes_found[i] = num_new_genes
+        genes_found[i] = genes_found[i-1] + num_new_genes
 
     # Plot the rarefaction curve
-    plt.plot(np.arange(1, num_samples + 1), new_genes_found, marker='o')
+    plt.plot(np.arange(1, num_samples + 1), genes_found, marker='o')
     plt.xlabel('Number of sequences sampled')
-    plt.ylabel('Number of new genes found')
+    plt.ylabel('Number of genes found')
     plt.title('Gene accumulation curve')
     plt.grid(True)
 
