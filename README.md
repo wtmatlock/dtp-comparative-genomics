@@ -1,4 +1,4 @@
-# Comparative Genomics
+# Comparative genomics tutorial
 
 ## Annotating genomes with Prokka
 
