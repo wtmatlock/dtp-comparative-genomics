@@ -49,7 +49,7 @@ How do the two plots compare? How could we improve this script?
 - Mash similarity heatmap
 - Gene overlap heatmap
 
-## Extra work: classifying *E. coli*
+## Extra work: classifying *E. coli* sequences
 
 - mlst: https://github.com/tseemann/mlst
 - ezclermont: https://github.com/nickp60/EzClermont
