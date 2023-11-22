@@ -48,3 +48,8 @@ How do the two plots compare? How could we improve this script?
 ## Clustering genomes in two ways
 - Mash similarity heatmap
 - Gene overlap heatmap
+
+## Extra wokr: classifying *E. coli*
+
+- mlst: https://github.com/tseemann/mlst
+- ezclermont: https://github.com/nickp60/EzClermont
