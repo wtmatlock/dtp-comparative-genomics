@@ -40,7 +40,9 @@ def new_genes_found(incidence_matrix):
     plt.ylabel('Number of new genes found')
     plt.title('Gene accumulation curve')
     plt.grid(True)
-    plt.show()
+
+    # Save the plot as a PDF file with the input file name
+    plt.savefig(f"./{input_file}_plot.pdf")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
