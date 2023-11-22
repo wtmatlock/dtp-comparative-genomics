@@ -1,6 +1,6 @@
 # Comparative genomics tutorial
 
-## The dataset
+## Downloading the dataset
 
 ```
 wget https://github.com/wtmatlock/dtp-comparative-genomics/archive/main.zip
