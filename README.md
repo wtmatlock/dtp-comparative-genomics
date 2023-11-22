@@ -27,4 +27,4 @@ cd ..
 cd ./ecoli
 panaroo --input ./*_prokka/*.gff --out_dir ecoli_panaroo_output --clean-mode strict
 ```
-Again, take some time to explore the outputs. In particular, how do the `summary.txt` files compare between the *E. coli* and *M. tuberculosis* samples?
+Again, take some time to explore the outputs. In particular, how do the `summary_statistics.txt` files compare between the *E. coli* and *M. tuberculosis* samples?
