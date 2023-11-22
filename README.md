@@ -1,5 +1,9 @@
 # Comparative genomics tutorial
 
+## The dataset
+- FASTA format
+- NCBI RefSeq etc./accessions
+ 
 ## Annotating genomes with Prokka
 
 Whenever running a new software tool, it is crucial to understand the parameters, to make sure you're running it correctly, and the version, so you can cite it properly. For Prokka, we can run
@@ -15,7 +19,7 @@ cd ./ecoli
 for sample in ./*.fasta; do prokka --outdir "$sample"_prokka --prefix "$sample" --genus Escherichia --species coli $sample; done
 cd ..
 ```
-Make sure you understand the syntax of the Bash for loop: What is the variable? What is the range? Also, have a look in one of the Prokka output directories: What is the format and purpose of each output file? In particular, look at the information contained in the [GFF](https://www.ensembl.org/info/website/upload/gff.html) files. Try using the `cat` and `head` commands to explore the outputs.
+Make sure you understand the syntax of the Bash for loop: What is the variable? What is the range? Also, have a look in one of the Prokka output directories: What is the format and purpose of each output file? In particular, look at the information contained in the [GFF](https://www.ensembl.org/info/website/upload/gff.html) files. Try using the `cat` and `head` commands to explore the outputs. Can you find the length (bp) of each sequence?
 
 ## Pangenome analysis with Panaroo
 [Documentation](https://github.com/gtonkinhill/panaroo).
@@ -34,3 +38,7 @@ python accumulation.py ./mtb/mtb_panaroo_output/gene_presence_absence.Rtab
 python accumulation.py ./ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
 ```
 How do the two plots compare? How could we improve this script?
+
+## Clustering genomes in two ways
+- Mash similarity heatmap
+- Gene overlap heatmap
