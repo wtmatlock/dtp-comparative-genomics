@@ -1,6 +1,12 @@
 # Comparative genomics tutorial
 
 ## The dataset
+
+```
+wget https://github.com/wtmatlock/dtp-comparative-genomics/archive/main.zip
+unzip main.zip
+```
+
 - FASTA format
 - NCBI RefSeq etc./accessions
  
