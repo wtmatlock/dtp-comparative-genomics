@@ -48,6 +48,8 @@ How do the two plots compare? How could we improve this script?
 - Gene overlap heatmap
 
 ```
+mash --help
+mash triangle
 cd ./mtb
 cat *.fasta > mtb_samples.fasta
 mash triangle -E ./mtb_samples.fasta > ./mtb_mash.tsv
