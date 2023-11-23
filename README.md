@@ -60,6 +60,11 @@ mash triangle -E ./ecoli_samples.fasta > ./ecoli_mash.tsv
 cd ..
 ```
 
+```
+python plotMash.py ./mtb/mtb_mash.tsv
+python plotMash.py ./ecoli/ecoli_mash.tsv
+```
+
 ## Extra work: classifying *E. coli* sequences
 
 - mlst: https://github.com/tseemann/mlst
