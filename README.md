@@ -8,7 +8,7 @@ unzip main.zip
 ```
 I originally downloaded these sequences from [NCBI](https://www.ncbi.nlm.nih.gov), which is a database of biological data, including genome sequences. Each sequence in the `ecoli` and `mtb` directories is the complete chromosome from an *E. coli* and *M. tuberculosis* genome, respectively. The file names are their *accessions* e.g. `NZ_CP007391.1`, which is a unique identifier given by NCBI. If we want, we can [search for them on NCBI](https://www.ncbi.nlm.nih.gov/search/all/?term=NZ_CP007391.1). Each sequence is in the [FASTA](https://en.wikipedia.org/wiki/FASTA_format) format. What are required features of a FASTA file?
 
-> All of the software you need for this practical should be pre-intsalled on your laptops.
+> All of the software you need for this practical should be pre-intsalled on your laptop.
  
 ## Annotating sequences with Prokka
 
