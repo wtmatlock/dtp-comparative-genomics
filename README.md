@@ -49,7 +49,7 @@ We are now going to test two approaches for sequence comparison. The first is ba
 python plotGenes.py ...
 python plotGenes.py ...
 ```
-Before you view the plots, what would you expect to see based on accumulation plots from before? After looking, how do the plots compare? Why did we use the Jaccard index instead of just total number of genes shared? Next, we will use Mash to estimate the Jaccard index of *k*-mers:
+Before you view the plots, what would you expect to see based on accumulation plots from before? After looking, how do the plots compare? Why did we use the Jaccard index instead of just the total number of genes shared? Next, we will use Mash to estimate the Jaccard index of *k*-mers:
 ```
 mash --help
 mash triangle
