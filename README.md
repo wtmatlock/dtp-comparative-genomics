@@ -44,9 +44,12 @@ python accumulation.py ./ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
 How do the two plots compare? How could we improve this script?
 
 ## Clustering chromosomes in two ways
-- Mash similarity heatmap
-- Gene overlap heatmap
-
+We are now going to compare two approaches for genome comparison. The first is based on our results from above, and will examine the overlap of genes between our sequences. The second will use an annotation-free technique based on the sharing of [*k*-mers](https://en.wikipedia.org/wiki/K-mer) between sequences, using a tool called [Mash](https://github.com/marbl/Mash). To begin, we will run a script to plot the sharing of genes as a heatmap:
+```
+python plotGenes.py ...
+python plotGenes.py ...
+```
+Mash...
 ```
 mash --help
 mash triangle
