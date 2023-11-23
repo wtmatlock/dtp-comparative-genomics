@@ -1,4 +1,4 @@
-# Comparative genomics tutorial
+# Comparative genomics practical
 
 ## Downloading the dataset
 First, we want to download our dataset:
