@@ -42,7 +42,7 @@ def new_genes_found(incidence_matrix):
     plt.grid(True)
 
     # Save the plot as a PDF file with the input file name
-    plt.savefig(f"./{input_file}_plot.pdf")
+    plt.savefig(f"./{input_file}_plot.png")
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
