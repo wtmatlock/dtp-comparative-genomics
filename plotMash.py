@@ -19,7 +19,7 @@ def create_heatmap_from_csv(csv_file, output_file):
     df['hashes'] = df['hashes'].apply(convert_distance)
 
     # Create a set of unique sequences
-    unique_seqs = set(df['seq1'].unique()) | set(df['seq2'].unique())
+    unique_seqs = sorted(set(df['seq1'].unique()) | set(df['seq2'].unique()))
 
     # Create a mapping from sequence labels to integer indices
     seq_to_index = {seq: i for i, seq in enumerate(unique_seqs)}
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     input_file = sys.argv[1]
 
     # Output file name (set to None if you want to display the plot instead of saving it)
-    output_filename = f"{input_file}_plot.png"
+    output_filename = f"{input_file}_heatmap_plot.png"
 
     # Create and display the heatmap
     create_heatmap_from_csv(input_file, output_filename)
