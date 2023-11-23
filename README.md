@@ -43,13 +43,13 @@ python accumulation.py ./ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
 ```
 How do the two plots compare? How could we improve this script?
 
-## Clustering chromosomes in two ways
-We are now going to compare two approaches for genome comparison. The first is based on our results from above, and will examine the overlap of genes between our sequences. The second will use an annotation-free technique based on the sharing of [*k*-mers](https://en.wikipedia.org/wiki/K-mer) between sequences, using a tool called [Mash](https://github.com/marbl/Mash). To begin, we will run a script to plot the sharing of genes as a heatmap:
+## Comparing chromosomes in two ways
+We are now going to test two approaches for sequence comparison. The first is based on our results from above, and will use the overlap of annotated genes between our sequences. The second will use an annotation-free technique based on the sharing of [*k*-mers](https://en.wikipedia.org/wiki/K-mer) between our sequences, using a tool called [Mash](https://github.com/marbl/Mash). To begin, we will run a script to plot the [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index) of genes as a heatmap:
 ```
 python plotGenes.py ...
 python plotGenes.py ...
 ```
-Mash...
+Before you view the plots, what would you expect to see based on accumulation plots from before? After looking, how do the plots compare? Why did we use the Jaccard index instead of just total number of genes shared? Next, we will use Mash to estimate the Jaccard index of *k*-mers:
 ```
 mash --help
 mash triangle
