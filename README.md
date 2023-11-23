@@ -47,6 +47,17 @@ How do the two plots compare? How could we improve this script?
 - Mash similarity heatmap
 - Gene overlap heatmap
 
+```
+cd ./mtb
+cat *.fasta > mtb_samples.fasta
+mash triangle -E ./mtb_samples.fasta > ./mtb_mash.tsv
+cd ..
+cd ./ecoli
+cat *.fasta > ecoli_samples.fasta
+mash triangle -E ./ecoli_samples.fasta > ./ecoli_mash.tsv
+cd ..
+```
+
 ## Extra work: classifying *E. coli* sequences
 
 - mlst: https://github.com/tseemann/mlst
