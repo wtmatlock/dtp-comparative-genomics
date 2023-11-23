@@ -71,7 +71,7 @@ The ways we have analysed our *E. ecoli* chromosomes above are often incoportate
 - [Multilocus sequence typing](https://en.wikipedia.org/wiki/Multilocus_sequence_typing) with [mlst](https://github.com/tseemann/mlst)
 - [Phylotyping](https://ami-journals.onlinelibrary.wiley.com/doi/10.1111/1758-2229.12019) (*in silico*) with [EzClermont](https://github.com/nickp60/EzClermont)
 
-Why might you want to give the results of these tools in an analysis?
+Why might you want to give the results of these tools in an analysis? How do they compare with our heatmaps?
 
 ## Extra extra work: antimicrobial resistance genes in *E. coli*
-Put simply, bacterial antimicrobial resistance (AMR) describes when an isolate is no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phyotypes of our *E. coli* chromosomes. What database is ABRicate using and why? Why might this analysis not give the full picture of AMR in our isolates?
+Put simply, bacterial antimicrobial resistance (AMR) describes when an isolate is no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. What database is ABRicate using and why? Why might this analysis not give the full picture of AMR in our isolates?
