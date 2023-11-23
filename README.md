@@ -10,7 +10,7 @@ I originally downloaded these sequences from [NCBI](https://www.ncbi.nlm.nih.gov
  
 ## Annotating sequences with Prokka
 
-Now, we want to annotate our chromosomes. Whenever running a new software tool, it is crucial to understand the parameters, to make sure you're running it correctly, and the version, so you can cite it properly. For Prokka, we can run
+Now, we want to [annotate](https://en.wikipedia.org/wiki/DNA_annotation) our chromosomes. Whenever running a new software tool, it is crucial to understand the parameters, to make sure you're running it correctly, and the version, so you can cite it properly. For Prokka, we can run
 ```
 prokka --help
 ```
@@ -26,7 +26,7 @@ cd ..
 Make sure you understand the syntax of the Bash for loop: What is the variable? What is the range? Also, have a look in one of the Prokka output directories: What is the format and purpose of each output file? In particular, look at the information contained in the [GFF](https://en.wikipedia.org/wiki/General_feature_format) files. Try using the `cat` and `head` commands to explore the outputs. Can you find the length (bp) of each sequence? Try exploring the annotations in [UniProt](https://www.uniprot.org). For example, the recF annotation in `NZ_CP041844.1` seems to control [DNA replication and repair](https://www.uniprot.org/uniprotkb/P0A7H0/entry).
 
 ## Pangenome analysis with Panaroo
-We will now explore the pangenomes of our samples. Again, please read the [documentation](https://github.com/gtonkinhill/panaroo) whilst the tool is running.
+We will now explore the [pangenomes](https://en.wikipedia.org/wiki/Pan-genome) of our samples. Again, please read the [documentation](https://github.com/gtonkinhill/panaroo) whilst the tool is running.
 ```
 panaroo --help
 cd ./mtb
