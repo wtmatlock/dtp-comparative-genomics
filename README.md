@@ -67,7 +67,7 @@ python plotMash.py ./ecoli/ecoli_mash.tsv
 Open all four plots at once. How does each approach differ within and between samples? What were the main differences between the approaches? Why might your prefer the use of one over the other?
 
 ## Extra work: classifying *E. coli* sequences
-The ways we have analysed our *E. ecoli* chromosomes above are often incoportated alongside other classification techniques. These techniques offer more coarse-grained resolution than the gene and *k*-mer sharing analysis we have just peformed. Have a look at the two tools below, explore their parameters, and try running them on our *E. coli* sample:
+The ways we have analysed our *E. coli* chromosomes above are often incoportated alongside other classification techniques. These techniques offer more coarse-grained resolution than the gene and *k*-mer sharing analysis we have just peformed. Have a look at the two tools below, explore their parameters, and try running them on our *E. coli* sample:
 - [Multilocus sequence typing](https://en.wikipedia.org/wiki/Multilocus_sequence_typing) with [mlst](https://github.com/tseemann/mlst)
 - [Phylotyping](https://ami-journals.onlinelibrary.wiley.com/doi/10.1111/1758-2229.12019) (*in silico*) with [EzClermont](https://github.com/nickp60/EzClermont)
 
