@@ -49,7 +49,7 @@ We are now going to test two approaches for sequence comparison. The first is ba
 python plotGenes.py ...
 python plotGenes.py ...
 ```
-Before you view the plots, what would you expect to see based on accumulation plots from before? After looking, how do the plots compare? Why did we use the Jaccard index instead of just the total number of genes shared? Next, we will use Mash to estimate the Jaccard index of *k*-mers:
+Before you view the plots, what would you expect to see based on accumulation plots from before? After looking, how do the plots compare? Why did we use the Jaccard index instead of just the total number of genes shared? Next, we will use Mash to plot the (estimated) Jaccard index of *k*-mers:
 ```
 mash --help
 mash triangle
@@ -61,13 +61,10 @@ cd ./ecoli
 cat *.fasta > ecoli_samples.fasta
 mash triangle -E ./ecoli_samples.fasta > ./ecoli_mash.tsv
 cd ..
-```
-
-```
 python plotMash.py ./mtb/mtb_mash.tsv
 python plotMash.py ./ecoli/ecoli_mash.tsv
 ```
-
+Open all four plots at once. Do they look similar within samples? What were the main differences in the approaches? Why might your prefer the use of one over the other?
 ## Extra work: classifying *E. coli* sequences
 
 - mlst: https://github.com/tseemann/mlst
