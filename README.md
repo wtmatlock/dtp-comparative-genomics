@@ -1,4 +1,4 @@
-# Comparative genomics practical
+# Comparative genomics practical 2023
 
 ## Downloading the dataset
 First, we want to download our dataset:
