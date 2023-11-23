@@ -64,7 +64,7 @@ cd ..
 python plotMash.py ./mtb/mtb_mash.tsv
 python plotMash.py ./ecoli/ecoli_mash.tsv
 ```
-Open all four plots at once. Do they look similar within samples? What were the main differences in the approaches? Why might your prefer the use of one over the other?
+Open all four plots at once. Do they look similar within samples? What were the main differences between the approaches? Why might your prefer the use of one over the other?
 ## Extra work: classifying *E. coli* sequences
 
 - mlst: https://github.com/tseemann/mlst
