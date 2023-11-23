@@ -3,12 +3,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+def convert_distance(distance_str):
+    try:
+        a, b = map(int, distance_str.split('/'))
+        return a / b
+    except (ValueError, ZeroDivisionError):
+        # Handle cases where the conversion or division fails
+        return np.nan
+
 def create_heatmap_from_csv(csv_file, output_file):
     # Read the CSV file into a DataFrame without headers
     df = pd.read_csv(csv_file, header=None, names=['seq1', 'seq2', 'distance', 'pval', 'hashes'], delimiter='\t')
 
     # Convert the "distance" column to numeric values
-    df['distance'] = pd.to_numeric(df['distance'], errors='coerce')
+    df['hashes'] = df['hashes'].apply(convert_distance)
 
     # Create a set of unique sequences
     unique_seqs = set(df['seq1'].unique()) | set(df['seq2'].unique())
@@ -20,20 +28,23 @@ def create_heatmap_from_csv(csv_file, output_file):
     matrix_size = len(unique_seqs)
 
     # Create a matrix of distances
-    distance_matrix = np.zeros((matrix_size, matrix_size))
+    similarity_matrix = np.zeros((matrix_size, matrix_size))
     for row in df.itertuples(index=False):
         index_seq1 = seq_to_index[row.seq1]
         index_seq2 = seq_to_index[row.seq2]
-        distance_matrix[index_seq1, index_seq2] = row.distance
-        distance_matrix[index_seq2, index_seq1] = row.distance  # Since it's a pairwise edge list
+        similarity_matrix[index_seq1, index_seq2] = row.hashes
+        similarity_matrix[index_seq2, index_seq1] = row.hashes  # Since it's a pairwise edge list
+
+    # Set diagonal elements to 1.0
+    np.fill_diagonal(similarity_matrix, 1.0)
 
     # Create a heatmap using Matplotlib
     plt.figure(figsize=(10, 8))
-    plt.imshow(distance_matrix, cmap='viridis', interpolation='nearest')
+    plt.imshow(similarity_matrix, cmap='viridis', interpolation='nearest')
     plt.xticks(range(matrix_size), unique_seqs, rotation=45, ha='right')
     plt.yticks(range(matrix_size), unique_seqs)
-    plt.colorbar(label='Distance')
-    plt.title('Pair-wise Mash distance heatmap')
+    plt.colorbar(label='Similarity')
+    plt.title('k-mer Jaccard index heatmap')
     plt.xlabel('Chromosome accession')
     plt.ylabel('Chromosome accession')
 
