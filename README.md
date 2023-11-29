@@ -56,7 +56,8 @@ Take some time to explore the outputs. In particular, how do the `summary_statis
 python accumulation.py ./mtb/mtb_panaroo_output/gene_presence_absence.Rtab
 python accumulation.py ./ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
 ```
-How do the two plots compare? How could we improve this script?
+- How do the two plots compare? 
+- How could we improve this script?
 
 ## Comparing chromosomes in two ways
 We are now going to test two approaches for sequence comparison. The first is based on our results from above, and will use the overlap of annotated genes between our sequences. The second will use an annotation-free technique based on the sharing of [*k*-mers](https://en.wikipedia.org/wiki/K-mer) between our sequences, using a tool called [Mash](https://github.com/marbl/Mash). To begin, we will run a script to plot the [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index) of genes as a heatmap:
