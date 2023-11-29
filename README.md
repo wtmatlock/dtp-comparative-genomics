@@ -77,7 +77,13 @@ Why might you want to give the results of these tools in an analysis? How do the
 
 ## Antimicrobial resistance genes in *E. coli*
 Put simply, bacterial antimicrobial resistance (AMR) describes when an isolate is no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. 
+> **Hint:** Once you have found a command that words, you can follow it with `> ecoli_abricate.tsv` to write the output to a file in your present working directory.
 - What database is ABRicate using and why?
 - Why might this analysis not give the full picture of AMR in our isolates?
-- How do the annotations (and predicited resistance phenotypes) vary across the sample?
-Now try running ABRricate with different databases. 
+- How do the annotations (and predicited resistance phenotypes) vary across the sample? Which are common? Which are rare?
+- How can we use the ABRicate output to examine the quality of the annotations?
+ABRicate comes pre-installed with other specialised databases. Try running ABRicate with another database. We can then combine outputs as follows:
+```
+abricate --summary ecoli_abricate_1.tsv ecoli_abricate_2.tsv > ecoli_abricate_combined.tsv
+```
+- Why might it be useful to annotate with multiple, potentially similar, databases?
