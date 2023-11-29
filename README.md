@@ -55,7 +55,7 @@ cd ./ecoli
 panaroo --input ./*_prokka/*.gff --out_dir ecoli_panaroo_output --clean-mode strict
 cd ..
 ```
-Take some time to explore the outputs. In particular, how do the `summary_statistics.txt` files compare between the *E. coli* and *M. tuberculosis* samples? Have a look at the Python script `accumulation.py`. What is it doing? Try running it with
+Take some time to explore the outputs. In particular, how do the `summary_statistics.txt` files compare between the *E. coli* and *M. tuberculosis* samples? Which species has more hypothetical proteins? Have a look at the Python script `accumulation.py`. What is it doing? Try running it with
 ```
 python accumulation.py ./mtb/mtb_panaroo_output/gene_presence_absence.Rtab
 python accumulation.py ./ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
