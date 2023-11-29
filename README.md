@@ -29,7 +29,11 @@ cd ./ecoli
 for sample in ./*.fasta; do prokka --outdir "$sample"_prokka --prefix "$sample" --genus Escherichia --species coli $sample; done
 cd ..
 ```
-Make sure you understand the syntax of the Bash for loop: What is the variable? What is the range? Also, have a look in one of the Prokka output directories: What is the format and purpose of each output file? In particular, look at the information contained in the [GFF](https://en.wikipedia.org/wiki/General_feature_format) files. Try using the `cat` and `head` commands to explore the outputs. Can you find the length (bp) of each sequence? Try exploring the annotations in [UniProt](https://www.uniprot.org). For example, the recF annotation in `NZ_CP041844.1` seems to control [DNA replication and repair](https://www.uniprot.org/uniprotkb/P0A7H0/entry).
+- Make sure you understand the syntax of the Bash for loop. What is the variable? What is the range?
+- Have a look in one of the Prokka output directories. What is the format and purpose of each output file?
+- In particular, look at the information contained in the [GFF](https://en.wikipedia.org/wiki/General_feature_format) files. Try using the `cat` and `head` commands to explore the outputs.
+- Can you find the length (bp) of each sequence?
+- Try exploring the annotations in [UniProt](https://www.uniprot.org). For example, the recF annotation in `NZ_CP041844.1` seems to control [DNA replication and repair](https://www.uniprot.org/uniprotkb/P0A7H0/entry).
 
 ## Pangenome analysis with Panaroo
 We will now explore the [pangenomes](https://en.wikipedia.org/wiki/Pan-genome) of our samples. Please read the [documentation](https://github.com/gtonkinhill/panaroo) whilst the tool is running.
@@ -42,7 +46,7 @@ cd ./ecoli
 panaroo --input ./*_prokka/*.gff --out_dir ecoli_panaroo_output --clean-mode strict
 cd ..
 ```
-Again, take some time to explore the outputs. In particular, how do the `summary_statistics.txt` files compare between the *E. coli* and *M. tuberculosis* samples? Have a look at the Python script `accumulation.py`. What is it doing? Try running it with
+Take some time to explore the outputs. In particular, how do the `summary_statistics.txt` files compare between the *E. coli* and *M. tuberculosis* samples? Have a look at the Python script `accumulation.py`. What is it doing? Try running it with
 ```
 python accumulation.py ./mtb/mtb_panaroo_output/gene_presence_absence.Rtab
 python accumulation.py ./ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
@@ -70,14 +74,22 @@ cd ..
 python plotMash.py ./mtb/mtb_mash.tsv
 python plotMash.py ./ecoli/ecoli_mash.tsv
 ```
-Open all four plots at once. How does each approach differ within and between samples? What were the main differences between the approaches? Why might your prefer the use of one over the other?
+Open all four plots at once. 
+- How does each approach differ within and between samples?
+- What were the main differences between the approaches?
+- Why might your prefer the use of one over the other?
+- What happens when you increase the Mash sketch size?
 
 ## Classifying *E. coli* sequences
 The ways we have analysed our *E. coli* chromosomes above are often incoportated alongside other classification techniques. These techniques offer more coarse-grained resolution than the gene and *k*-mer sharing analysis we have just peformed. Have a look at the two tools below, explore their parameters, and try running them on our *E. coli* sample:
+
 - [Multilocus sequence typing](https://en.wikipedia.org/wiki/Multilocus_sequence_typing) with [mlst](https://github.com/tseemann/mlst)
 - [Phylotyping](https://ami-journals.onlinelibrary.wiley.com/doi/10.1111/1758-2229.12019) (*in silico*) with [EzClermont](https://github.com/nickp60/EzClermont)
 
-Why might you want to give the results of these tools in an analysis? How do they compare with our heatmaps?
+> Running these new tools is no different syntactically to running those above. Take some time to read the documentation if you get stuck.
+
+- Why might you want to give the results of these tools in an analysis?
+- How do they compare with our heatmaps?
 
 ## Antimicrobial resistance genes in *E. coli*
 Put simply, bacterial antimicrobial resistance (AMR) describes when an isolate is no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. 
