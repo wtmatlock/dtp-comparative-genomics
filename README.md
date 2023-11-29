@@ -8,7 +8,7 @@ First, we want to download our dataset:
 wget https://github.com/wtmatlock/dtp-comparative-genomics/archive/main.zip
 unzip main.zip
 ```
-Try exploring the directory structure with the `ls`, `wc`, and `cd` commands. If you are unsure what a tool does, use `man`, e.g. `man ls`. If you want to clear your terminal, use... `clear`. I originally downloaded these sequences from [NCBI](https://www.ncbi.nlm.nih.gov), which is a database of biological data, including genome sequences. Each sequence in the `ecoli` and `mtb` directories is the complete chromosome from an *E. coli* and *M. tuberculosis* genome, respectively. The files are all in the [FASTA](https://en.wikipedia.org/wiki/FASTA_format) format. 
+Try exploring the directory structure with the `ls`, `wc`, and `cd` commands. If you are unsure what a command does, use `man`, e.g. `man ls`. If you want to clear your terminal, use... `clear`. I originally downloaded these sequences from [NCBI](https://www.ncbi.nlm.nih.gov), which is a database of biological data, including genome sequences. Each sequence in the `ecoli` and `mtb` directories is the complete chromosome from an *E. coli* and *M. tuberculosis* genome, respectively. The files are all in the [FASTA](https://en.wikipedia.org/wiki/FASTA_format) format. 
 - What does FASTA stand for?
 - What are the features of a FASTA file?
 - What is the purpose of the header line?
