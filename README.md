@@ -113,6 +113,7 @@ Put simply, bacterial antimicrobial resistance (AMR) describes when an isolate i
 - Why might this analysis not give the full picture of AMR in our isolates?
 - How do the annotations (and predicited resistance phenotypes) vary across the sample? Which are common? Which are rare?
 - How can we use the ABRicate output to examine the quality of the annotations?
+- Now run ABRicate on our *M. tuberculosis* sequences. Are the annotations different or similar? Why might this be?
 ABRicate comes pre-installed with other specialised databases. Try running ABRicate with another database. We can then combine outputs as follows:
 ```
 abricate --summary ecoli_abricate_1.tsv ecoli_abricate_2.tsv > ecoli_abricate_combined.tsv
