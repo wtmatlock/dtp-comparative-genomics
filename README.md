@@ -68,12 +68,16 @@ python plotMash.py ./ecoli/ecoli_mash.tsv
 ```
 Open all four plots at once. How does each approach differ within and between samples? What were the main differences between the approaches? Why might your prefer the use of one over the other?
 
-## Extra work: classifying *E. coli* sequences
+## Classifying *E. coli* sequences
 The ways we have analysed our *E. coli* chromosomes above are often incoportated alongside other classification techniques. These techniques offer more coarse-grained resolution than the gene and *k*-mer sharing analysis we have just peformed. Have a look at the two tools below, explore their parameters, and try running them on our *E. coli* sample:
 - [Multilocus sequence typing](https://en.wikipedia.org/wiki/Multilocus_sequence_typing) with [mlst](https://github.com/tseemann/mlst)
 - [Phylotyping](https://ami-journals.onlinelibrary.wiley.com/doi/10.1111/1758-2229.12019) (*in silico*) with [EzClermont](https://github.com/nickp60/EzClermont)
 
 Why might you want to give the results of these tools in an analysis? How do they compare with our heatmaps?
 
-## Extra extra work: antimicrobial resistance genes in *E. coli*
-Put simply, bacterial antimicrobial resistance (AMR) describes when an isolate is no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. What database is ABRicate using and why? Why might this analysis not give the full picture of AMR in our isolates?
+## Antimicrobial resistance genes in *E. coli*
+Put simply, bacterial antimicrobial resistance (AMR) describes when an isolate is no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. 
+- What database is ABRicate using and why?
+- Why might this analysis not give the full picture of AMR in our isolates?
+- How do the annotations (and predicited resistance phenotypes) vary across the sample?
+Now try running ABRricate with different databases. 
