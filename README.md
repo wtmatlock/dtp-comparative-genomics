@@ -2,7 +2,9 @@
 
 The aim of this practical is to compare the chromosomes of 10 *Escherichia coli* isolates and 10 *Mycobacterium tuberculosis* isolates. We will be using most of the techniques covered in the lecture this morning. By the end, you should have a better grasp of how these tools work, as well as a deeper understanding of the biology of our case study species. Both of these organisms are some of the most ubiquitous human pathogens, with *E. coli* the leading cause of many common human infections, and tuberculosis killing more people annually than HIV/AIDs or malaria. The steps we will work through today are identical to those carried out by clinical microbiologists when characterising bacterial pathogens.
 
-**Please open up a new Word document to answer the questions and organise any plots as you go along!**
+## Setting up
+
+Please open up a new Word document to answer the questions and organise any plots as you go along. Try to use it like you would a wet-lab notebook: What software did I use? What version? What command? Recording this information properly is central to making any computational analysis reproducible, so it's good to get in the habit of it.
 
 ## Downloading the dataset
 First, we want to download our dataset:
