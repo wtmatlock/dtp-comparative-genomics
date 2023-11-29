@@ -93,6 +93,13 @@ The ways we have analysed our *E. coli* chromosomes above are often incoportated
 
 > Running these new tools is no different syntactically to running those above. Take some time to read the documentation if you get stuck.
 
+- What is MLST, and what is its primary purpose in molecular biology and epidemiology?
+- Explain the concept of *loci* in the context of MLST. How are loci used in MLST analysis?
+- What is the significance of allele numbers in MLST analysis, and how are they assigned to different sequences?
+- Describe the process of sequence typing using MLST. How does it contribute to the characterization of bacterial strains?
+- What is phylotyping, and how does it contribute to the study of microbial diversity and evolution?
+- How is phylotyping traditionally carried out with PCR?
+- Explain the term *in silico* in the context of phylotyping. How does *in silico* phylotyping differ from traditional PCR-based methods?
 - Why might you want to give the results of these tools in an analysis?
 - How do they compare with our heatmaps?
 
