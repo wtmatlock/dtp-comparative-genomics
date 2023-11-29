@@ -1,6 +1,6 @@
 # Comparative genomics practical 2023
 
-The aim of this practical is to compare the chromosomes of 10 *Escherichia coli* isolates and 10 *Mycobacterium tuberculosis* isolates. We will be using most of the techniques covered in the lecture this morning. By the end, you should have a better grasp of how these tools work, as well as a deeper understanding of the biology of our case study species. Both of these organisms are some of the most ubiquitous human pathogens, with *E. coli* the leading cause of many common human infections, and tuberculosis killing more people annually than HIV/AIDs or malaria. The steps we will work through today are very similar to those carried out by clinical microbiologists when characterising bacterial pathogens.
+The aim of this practical is to compare the chromosomes of 10 *Escherichia coli* isolates and 10 *Mycobacterium tuberculosis* isolates. We will be using most of the techniques covered in the lecture this morning. By the end, you should have a better grasp of how these tools work, as well as a deeper understanding of the biology of our case study species. Both of these organisms are some of the most ubiquitous human pathogens, with *E. coli* the leading cause of many common human infections, and tuberculosis killing more people annually than HIV/AIDs or malaria. The steps we will work through today are identical to those carried out by clinical microbiologists when characterising bacterial pathogens.
 
 ## Downloading the dataset
 First, we want to download our dataset:
