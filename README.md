@@ -21,7 +21,7 @@ Try exploring the directory structure with the `ls`, `wc`, and `cd` commands. If
 The file names are their *accessions* e.g. `NZ_CP007391.1`, which is a unique identifier given by NCBI. If we want, we can [search for them on NCBI](https://www.ncbi.nlm.nih.gov/search/all/?term=NZ_CP007391.1). Try searching for each *E. coli* accession in NCBI.
 - What is the difference between an assembly, nucleotide, and genome accession?
 - Can you find the (i) country, (ii) submission date, and (iii) original study associated with each sequence?
-- Do you the submission date is the same as the isolation data? Why might this pose problems for future studies?
+- Do you the submission date is the same as the isolation date? Why might this pose problems for future studies?
  
 ## Annotating sequences with Prokka
 
