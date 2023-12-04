@@ -68,8 +68,8 @@ python accumulation.py ./sequences/ecoli/ecoli_panaroo_output/gene_presence_abse
 ## Comparing chromosomes in two ways
 We are now going to test two approaches for sequence comparison. The first is based on our results from above, and will use the overlap of annotated genes between our sequences. The second will use an annotation-free technique based on the sharing of [*k*-mers](https://en.wikipedia.org/wiki/K-mer) between our sequences, using a tool called [Mash](https://github.com/marbl/Mash). To begin, we will run a script to plot the [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index) of genes as a heatmap:
 ```
-python plotGenes.py ./mtb/mtb_panaroo_output/gene_presence_absence.Rtab
-python plotGenes.py ./ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
+python plotGenes.py ./sequences/mtb/mtb_panaroo_output/gene_presence_absence.Rtab
+python plotGenes.py ./sequences/ecoli/ecoli_panaroo_output/gene_presence_absence.Rtab
 ```
 Before you view the plots, what would you expect to see based on accumulation plots from before? After looking, how do the plots compare? Why did we use the Jaccard index instead of just the total number of genes shared? Next, we will use Mash to plot the (estimated) Jaccard index of *k*-mers:
 ```
