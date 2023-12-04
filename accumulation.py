@@ -37,7 +37,7 @@ def new_genes_found(incidence_matrix):
     # Plot the rarefaction curve
     plt.plot(np.arange(1, num_samples + 1), genes_found, marker='o')
     plt.xlabel('Number of sequences sampled')
-    plt.ylabel('Number of genes found')
+    plt.ylabel('Number of unique genes found')
     plt.title('Gene accumulation curve')
     plt.grid(True)
 
