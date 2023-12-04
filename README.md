@@ -10,7 +10,8 @@ Please open up a new Word document to answer the questions and organise any plot
 First, we want to download our dataset:
 ```
 wget https://github.com/wtmatlock/dtp-comparative-genomics/archive/main.zip
-unzip main.zip
+unzip ./main.zip
+cd ./dtp-comparative-genomics-main
 ```
 Try exploring the directory structure with the `ls`, `wc`, and `cd` commands. If you are unsure what a command does, use `man`, e.g. `man ls`. If you want to clear your terminal, use... `clear`. I originally downloaded these sequences from [NCBI](https://www.ncbi.nlm.nih.gov), which is a database of biological data, including genome sequences. Each sequence in the `ecoli` and `mtb` directories is the complete chromosome from an *E. coli* and *M. tuberculosis* genome, respectively. The files are all in the [FASTA](https://en.wikipedia.org/wiki/FASTA_format) format. 
 - What does FASTA stand for?
