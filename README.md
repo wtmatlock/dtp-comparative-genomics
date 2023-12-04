@@ -75,7 +75,7 @@ Before you view the plots, what would you expect to see based on accumulation pl
 ```
 mash --help
 mash triangle
-cd ./mtb
+cd ./sequences/mtb
 cat *.fasta > mtb_samples.fasta
 mash triangle -E ./mtb_samples.fasta > ./mtb_mash.tsv
 cd ..
@@ -83,8 +83,9 @@ cd ./ecoli
 cat *.fasta > ecoli_samples.fasta
 mash triangle -E ./ecoli_samples.fasta > ./ecoli_mash.tsv
 cd ..
-python plotMash.py ./mtb/mtb_mash.tsv
-python plotMash.py ./ecoli/ecoli_mash.tsv
+cd ..
+python plotMash.py ./sequences/mtb/mtb_mash.tsv
+python plotMash.py ./sequences/ecoli/ecoli_mash.tsv
 ```
 Open all four plots at once. 
 - How does each approach differ within and between samples?
