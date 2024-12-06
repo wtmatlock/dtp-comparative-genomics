@@ -6,7 +6,7 @@ The aim of this practical is to compare the chromosomes of 10 *Escherichia coli*
 
 Please open up a new Word document to answer the questions and organise any plots as you go along. Try to use it like you would a wet-lab notebook: What software did I use? What version? What command? Did anything go wrong? How did I fix it? Recording this information properly is central to making any computational analysis reproducible, so it's good to get in the habit.
 
-> The archive `output.zip` contains all the outputs and plots up to the "Classifying *E. coli* sequences" section.
+> The archive `output.zip` available [here](https://figshare.com/articles/dataset/Output_for_the_2024_comparative_genomics_practical/) contains all the outputs and plots up to the "Classifying *E. coli* sequences" section.
 
 ## Downloading the dataset
 First, we want to download our dataset:
