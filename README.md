@@ -97,7 +97,7 @@ Open all four plots at once.
 - What happens when you increase the Mash sketch size?
 
 ## Classifying *E. coli* sequences
-The ways we have analysed our *E. coli* chromosomes above are often incoportated alongside other classification techniques. These techniques offer more coarse-grained resolution than the gene and *k*-mer sharing analysis we have just peformed. Have a look at the two tools below, explore their parameters, and try running them on our *E. coli* sample:
+The ways we have analysed our *E. coli* chromosomes above are often incorporated alongside other classification techniques. These techniques offer more coarse-grained resolution than the gene and *k*-mer sharing analysis we have just peformed. Have a look at the two tools below, explore their parameters, and try running them on our *E. coli* sample:
 
 - [Multilocus sequence typing](https://en.wikipedia.org/wiki/Multilocus_sequence_typing) with [mlst](https://github.com/tseemann/mlst)
 - [Phylotyping](https://ami-journals.onlinelibrary.wiley.com/doi/10.1111/1758-2229.12019) (*in silico*) with [EzClermont](https://github.com/nickp60/EzClermont)
@@ -115,11 +115,11 @@ The ways we have analysed our *E. coli* chromosomes above are often incoportated
 - How do they compare with our heatmaps?
 
 ## Antimicrobial resistance genes in *E. coli*
-Put simply, bacterial antimicrobial resistance (AMR) describes when cells are no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. 
-> **Hint:** Once you have found a command that words, you can follow it with `> ecoli_abricate.tsv` to write the output to a file in your present working directory.
+Put simply, bacterial antimicrobial resistance (AMR) describes when cells are no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquisition of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. 
+> **Hint:** Once you have found a command that works, you can follow it with `> ecoli_abricate.tsv` to write the output to a file in your present working directory.
 - What database is ABRicate using and why?
 - Why might this analysis not give the full picture of AMR in our isolates?
-- How do the annotations (and predicited resistance phenotypes) vary across the sample? Which are common? Which are rare?
+- How do the annotations (and predicted resistance phenotypes) vary across the sample? Which are common? Which are rare?
 - How can we use the ABRicate output to examine the quality of the annotations?
 - Now run ABRicate on our *M. tuberculosis* sequences. Are the annotations different or similar? Why might this be?
 ABRicate comes pre-installed with other specialised databases. Try running ABRicate with another database. We can then combine outputs as follows:
