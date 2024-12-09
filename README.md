@@ -4,7 +4,7 @@ The aim of this practical is to compare the chromosomes of 10 *Escherichia coli*
 
 ## Setting up
 
-Please open up a new Word document to answer the questions and organise any plots as you go along. Try to use it like you would a wet-lab notebook: What software did I use? What version? What command? Did anything go wrong? How did I fix it? Recording this information properly is central to making any computational analysis reproducible, so it's good to get in the habit.
+Please open up a new text document to answer the questions and organise any plots as you go along. Try to use it like you would a wet-lab notebook: What software did I use? What version? What command? Did anything go wrong? How did I fix it? Recording this information properly is central to making any computational analysis reproducible, so it's good to get in the habit.
 
 > The archive `output.zip` available [here](https://doi.org/10.6084/m9.figshare.27981254.v1) contains all the outputs and plots up to the "Classifying *E. coli* sequences" section.
 
@@ -115,7 +115,7 @@ The ways we have analysed our *E. coli* chromosomes above are often incoportated
 - How do they compare with our heatmaps?
 
 ## Antimicrobial resistance genes in *E. coli*
-Put simply, bacterial antimicrobial resistance (AMR) describes when an isolate is no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. 
+Put simply, bacterial antimicrobial resistance (AMR) describes when cells are no longer sensitive to antimicrobials. For *E. coli*, this is often due to the acquistion of certain genes that confer a resistant phenotype. To annotate for these genes, specific tools and databases are often employed. Try using [ABRicate](https://github.com/tseemann/abricate) to predict the resistance phenotypes of our *E. coli* chromosomes. 
 > **Hint:** Once you have found a command that words, you can follow it with `> ecoli_abricate.tsv` to write the output to a file in your present working directory.
 - What database is ABRicate using and why?
 - Why might this analysis not give the full picture of AMR in our isolates?
