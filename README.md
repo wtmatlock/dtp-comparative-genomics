@@ -10,7 +10,7 @@ Please open up a new text document to answer the questions and organise any plot
 
 ## Installing software
 
-You will have to install the tools for this tutorial yourselves using Conda. As a heads up, [Panaroo](https://github.com/gtonkinhill/panaroo) prefers Python v. 3.9, and you will need to install [Mash](https://github.com/marbl/Mash) v. 2.1.1 to have access to the `triangle` mode.
+You will have to install the tools for this tutorial yourselves using Conda. As a heads up, [Panaroo](https://github.com/gtonkinhill/panaroo) prefers Python v. 3.9, and you will need to install [Mash](https://github.com/marbl/Mash) v. 2.1 to have access to the `triangle` mode.
 
 ## Downloading the dataset
 First, we want to download our dataset:
