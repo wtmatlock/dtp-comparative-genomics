@@ -8,6 +8,10 @@ Please open up a new text document to answer the questions and organise any plot
 
 > The archive `output.zip` available [here](https://doi.org/10.6084/m9.figshare.27981254.v1) contains all the outputs and plots up to the "Classifying *E. coli* sequences" section.
 
+## Installing software
+
+You will have to install the tools for this tutorial yourselves using Conda. As a heads up, [Panaroo](https://github.com/gtonkinhill/panaroo) prefers Python v. 3.9, and you will need to install [Mash](https://github.com/marbl/Mash) v. 2.1.1 to have access to the `triangle` mode.
+
 ## Downloading the dataset
 First, we want to download our dataset:
 ```
