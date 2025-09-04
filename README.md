@@ -8,7 +8,7 @@ Please open up a new text document to answer the questions and organise any plot
 
 > The archive `output.zip` available [here](https://doi.org/10.6084/m9.figshare.27981254.v1) contains all the outputs and plots up to the "Classifying *E. coli* sequences" section.
 
-## Installing software
+## Installing the software
 
 You will have to install the tools for this tutorial yourself using Conda. I recommend using a separate environment for each tool:
 
