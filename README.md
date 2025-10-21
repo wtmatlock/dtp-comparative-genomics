@@ -19,12 +19,12 @@ You will have to install the tools for this tutorial yourself using Conda.
 - [EzClermont](https://github.com/nickp60/EzClermont)
 - [ABRicate](https://github.com/tseemann/abricate)
 
-As a heads up, [Panaroo](https://github.com/gtonkinhill/panaroo) requires Python v. 3.9, and you will need to install [Mash](https://github.com/marbl/Mash) v. 2.1 to have access to the `triangle` mode. Additionally, running the scripts will require [matplotlib](https://anaconda.org/conda-forge/matplotlib), [numpy](https://anaconda.org/conda-forge/numpy), and [pandas](https://anaconda.org/conda-forge/pandas) in the same environment. This worked for me, but generally, I recommend using a separate environment for each tool:
+As a heads up, [Panaroo](https://github.com/gtonkinhill/panaroo) requires Python v. 3.9, and you will need to install [Mash](https://github.com/marbl/Mash) v. 2.3 to have access to the `triangle` mode. Additionally, running the scripts will require [matplotlib](https://anaconda.org/conda-forge/matplotlib), [numpy](https://anaconda.org/conda-forge/numpy), and [pandas](https://anaconda.org/conda-forge/pandas) in the same environment. I recommend using a separate environment for each tool. For example:
 
 ```
-conda create -n comp_genom_env python=3.9
-conda activate comp_genom_env
-mamba install prokka panaroo mash==2.1.1 mlst ezclermont abricate matplotlib numpy pandas
+conda create -n mash_2_3_env
+conda install mamba
+mamba install -c conda-forge -c bioconda mash=2.3
 ```
 
 ## Downloading the dataset
