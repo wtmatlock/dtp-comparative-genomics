@@ -19,9 +19,13 @@ You will have to install the tools for this tutorial yourself using Conda. I rec
 - [EzClermont](https://github.com/nickp60/EzClermont)
 - [ABRicate](https://github.com/tseemann/abricate)
 
-As a heads up, [Panaroo](https://github.com/gtonkinhill/panaroo) requires Python v. 3.9, and you will need to install [Mash](https://github.com/marbl/Mash) v. 2.1 to have access to the `triangle` mode.
+As a heads up, [Panaroo](https://github.com/gtonkinhill/panaroo) requires Python v. 3.9, and you will need to install [Mash](https://github.com/marbl/Mash) v. 2.1 to have access to the `triangle` mode. Additionally, running the scripts will require [matplotlib](https://anaconda.org/conda-forge/matplotlib), [numpy](https://anaconda.org/conda-forge/numpy), and [pandas](https://anaconda.org/conda-forge/pandas) in the same environment. This worked for me:
 
-Additionally, running the scripts will require [matplotlib](https://anaconda.org/conda-forge/matplotlib), [numpy](https://anaconda.org/conda-forge/numpy), and [pandas](https://anaconda.org/conda-forge/pandas) in the same environment.
+```
+conda create -n comp_genom_env python==3.9
+conda activate comp_genom_env
+mamba install prokka panaroo mash==2.1.1 mlst ezclermont abricate matplotlib numpy pandas
+```
 
 ## Downloading the dataset
 First, we want to download our dataset:
